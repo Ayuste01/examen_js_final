@@ -253,7 +253,36 @@
         Array donde se guardan los platos que el usuario añade.
         Al principio está vacío.
     */
-    let platos = [];
+    let platos = [
+        {
+            nombre: "Ensalada César",
+            descripcion: "Ensalada con pollo, lechuga, queso y salsa César",
+            tipo: "primero",
+            precio: 8.50,
+            foto: "ensalada.jpg"
+        },
+        {
+            nombre: "Macarrones boloñesa",
+            descripcion: "Pasta con salsa de tomate y carne picada",
+            tipo: "primero",
+            precio: 9.00,
+            foto: "macarrones.jpg"
+        },
+        {
+            nombre: "Pollo al horno",
+            descripcion: "Pollo asado con patatas",
+            tipo: "segundo",
+            precio: 11.50,
+            foto: "pollo.jpg"
+        },
+        {
+            nombre: "Merluza a la plancha",
+            descripcion: "Merluza con verduras salteadas",
+            tipo: "segundo",
+            precio: 12.00,
+            foto: "merluza.jpg"
+        }
+    ];
 
 
     // Cambiar frase dia ------------------------------------------------
@@ -276,7 +305,7 @@
 
     dia.addEventListener("change", cambiarDia)
 
-// menu dia ---------------------------------------------------------------
+// pintar carta ---------------------------------------------------------------
     function pintarCarta() {
     let html = "";
 
@@ -342,6 +371,8 @@ function pintarMenuDia() {
         "<h3>Primeros</h3>" + primeros +
         "<h3>Segundos</h3>" + segundos;
 }
+pintarMenuDia()
+
 
 // Añadir platos a carta ------------------------------------------------------
 
